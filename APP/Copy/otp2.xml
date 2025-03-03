@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".otp1activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:background="#FFFFFF">
+
+        <!-- Back Button -->
+
+        <!-- OTP Verification Text -->
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:contentDescription="Back"
+            android:padding="8dp"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP Verification"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Instructions -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the code from the email we sent to"
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Email Address -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="abc.sse@gmail.com"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Timer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02:32"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FF914D"
+            android:layout_marginTop="12dp"/>
+
+        <!-- OTP Input Fields -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/otp_box"
+                android:maxLength="1"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/otp_box"
+                android:maxLength="1"
+                android:inputType="number"
+                android:layout_marginStart="8dp"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/otp_box"
+                android:maxLength="1"
+                android:inputType="number"
+                android:layout_marginStart="8dp"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/otp_box"
+                android:maxLength="1"
+                android:inputType="number"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Resend Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I didn't receive any code. RESEND"
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"/>
+
+        <!-- Submit Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/playfair_display"
+            android:text="Submit "
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo"  />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+
+        <!-- Search Bar Container -->
+        <LinearLayout
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/searchbar"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:elevation="5dp"
+            android:weightSum="3"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <!-- Back Button -->
+
+            <!-- Search Text -->
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="10dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/back" />
+
+            <!-- Search Icon -->
+            <TextView
+                android:id="@+id/searchText"
+                android:layout_width="44dp"
+                android:layout_height="32dp"
+                android:layout_gravity="left"
+                android:layout_weight="2"
+                android:fontFamily="serif"
+                android:text="Search"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/searchIcon"
+                android:layout_width="4dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/search_icon" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
